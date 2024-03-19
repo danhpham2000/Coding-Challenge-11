@@ -13,3 +13,126 @@ body {
   margin: 0;
   font-family: "Red Hat Display";
 }
+
+.container {
+  height: 100vh;
+  background: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /* text-align: center; */
+  background: white;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.card .image {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .content {
+  padding: 40px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.card #text {
+  color: var(--color-desaturated-blue);
+}
+
+.card .plan {
+  background: var(--color-very-pale);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.plan img {
+  grid-column: span 1;
+  margin-left: 15px;
+}
+
+.plan .annual {
+  grid-column: span 2;
+  justify-self: start;
+}
+
+.annual p {
+  margin: 3px;
+}
+
+.annual p:first-child {
+  font-weight: 700;
+}
+
+.annual p:nth-child(2) {
+  color: var(--color-desaturated-blue);
+}
+
+.plan a {
+  color: var(--color-bright-blue);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.plan a:hover {
+  color: rgba(0, 0, 255, 0.5);
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 15px 10px;
+  background: var(--color-bright-blue);
+  width: 100%;
+  color: var(--color-very-pale);
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+#cancel {
+  margin-top: 30px;
+  color: var(--color-desaturated-blue);
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#cancel:hover {
+  color: black;
+}
+
+@media screen and (min-width: 1200px) {
+  /* .container {
+    background: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+}
+
+.card .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
